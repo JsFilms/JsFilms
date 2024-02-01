@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    text-align: justify;
+    font-size: 0.9rem;
+}
+
+.btn {
+    padding: 15px 30px;
+    color: #FFF;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: #131313;
+}
+
+section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    background-color: rgb(19, 19, 19);
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    height: 80px;
+}
+
+.scrolled.bg-color {
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    background: rgb(19, 19, 19, 0.7);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.5s;
+}
+
+.navbar img {
+    height: 200px;
+    padding: 25px 0px;
+}
+
+.navbar li {
+    margin: 0px 30px;
+}
+
+.header {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header video {
+    opacity: 0.7;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .header video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.header h1 {
+    font-size: 6rem;
+}
+
+.owl-theme .owl-nav button {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(5px) !important;
+    height: 12%;
+    width: 4%;
+    font-size: 30px !important;
+    color: #FFF !important;
+}
+
+.owl-theme .owl-nav .owl-prev {
+    left: 0;
+    top: 42.5%;
+}
+
+.owl-theme .owl-nav .owl-next {
+    right: 0;
+    top: 42.5%;
+}
+
+
+.about img {
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+    border-radius: 5px;
+}
+
+.videos {
+    height: auto;
+}
+
+.videos img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.contact img {
+    object-fit: cover;
+    height: 580px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact h1 {
+    font-size: 4.5rem;
+}
+
+.contact form input {
+    background: none;
+}
+
+.contact form textarea {
+    background: none;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+}
+
+.details .container {
+    border-top: 2px solid #393838;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    border-top: 2px solid #393838;
+}
+
+.copyright p {
+    font-size: 0.8rem;
+}
+
+.aboutus {
+    height: auto;
+}
+
+.aboutus h1 {
+    font-size: 4.5rem;
+    margin-top: 100px;
+    -webkit-text-stroke: 1px #ffc107;
+    -webkit-text-fill-color: transparent;
+}
+
+.aboutus p {
+    font-size: 1.2rem;
+}
+
+.skills {
+    height: auto;
+}
+
+.skills h1 {
+    font-size: 6rem;
+    margin-top: 100px;
+    -webkit-text-stroke: 1px #ffc107;
+    -webkit-text-fill-color: transparent;
+}
+
+.skills img {
+    object-fit: cover;
+    height: 150px;
+}
+
+.skills img:hover {
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+    transition: all 0.5s;
+    rotate: -5deg;
+}
+
+.videos iframe {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+@media(max-width:720px) {
+
+    .header h1 {
+        font-size: 4.5rem;
+        text-align: center;
+    }
+
+    .header h5 {
+        text-align: center;
+    }
+
+    .header .btn {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .navbar {
+        height: auto;
+    }
+
+    .navbar img {
+        height: 50px;
+        padding: 0px;
+    }
+
+    .owl-theme .owl-nav button {
+        height: 10%;
+        width: 8%;
+    }
+
+    .about h1{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .videos h1{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .videos .btn{
+        width: 100%;
+    }
+
+    .contact{
+        height: auto;
+    }
+
+    .skills img{
+        height: 120px;
+    }
+
+    .contact h1 {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .contact h5 {
+        text-align: center;
+    }
+
+    .details{
+        height: 30%;
+    }
+
+}
